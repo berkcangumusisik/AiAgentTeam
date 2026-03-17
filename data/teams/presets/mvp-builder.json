@@ -1,0 +1,52 @@
+{
+  "id": "mvp-builder",
+  "name": "MVP Builder",
+  "description": "A lean team designed to rapidly build and validate a minimum viable product from concept to working software, covering product strategy, design, development, testing, and documentation.",
+  "agents": [
+    {
+      "agentId": "product-manager",
+      "role": "Defines product vision, prioritizes features for the MVP scope, and ensures alignment with business goals",
+      "accessLevel": "read-only",
+      "order": 1
+    },
+    {
+      "agentId": "business-analyst",
+      "role": "Gathers and refines requirements, maps user stories, and validates feasibility of MVP features",
+      "accessLevel": "read-only",
+      "order": 2
+    },
+    {
+      "agentId": "ui-ux-designer",
+      "role": "Creates wireframes and UI designs focused on core user flows for the MVP experience",
+      "accessLevel": "read-only",
+      "order": 3
+    },
+    {
+      "agentId": "full-stack",
+      "role": "Implements the entire application stack, building both frontend and backend components end-to-end",
+      "accessLevel": "full",
+      "order": 4
+    },
+    {
+      "agentId": "qa-test",
+      "role": "Validates functionality, runs smoke tests, and ensures the MVP meets quality thresholds before release",
+      "accessLevel": "full",
+      "order": 5
+    },
+    {
+      "agentId": "documentation",
+      "role": "Produces setup guides, API docs, and user-facing documentation for the MVP deliverable",
+      "accessLevel": "full",
+      "order": 6
+    }
+  ],
+  "modelPolicy": {
+    "defaultProvider": "ollama",
+    "defaultModel": "llama3.1:8b"
+  },
+  "isPreset": true,
+  "isActive": true,
+  "tags": ["mvp", "startup", "rapid"],
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}

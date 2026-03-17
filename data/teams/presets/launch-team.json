@@ -1,0 +1,52 @@
+{
+  "id": "launch-team",
+  "name": "Launch Team",
+  "description": "A release-focused team that coordinates product launches, manages deployment pipelines, ensures production readiness, and establishes post-launch monitoring and documentation.",
+  "agents": [
+    {
+      "agentId": "product-owner",
+      "role": "Validates release scope, confirms acceptance criteria are met, and gives final go/no-go approval for launch",
+      "accessLevel": "read-only",
+      "order": 1
+    },
+    {
+      "agentId": "qa-test",
+      "role": "Performs pre-release validation, smoke testing, and final acceptance testing before deployment",
+      "accessLevel": "full",
+      "order": 2
+    },
+    {
+      "agentId": "devops",
+      "role": "Prepares infrastructure, configures environments, and ensures CI/CD pipelines are ready for production deployment",
+      "accessLevel": "full",
+      "order": 3
+    },
+    {
+      "agentId": "deployment-release",
+      "role": "Executes the deployment process, manages rollout strategy, and handles rollback procedures if needed",
+      "accessLevel": "full",
+      "order": 4
+    },
+    {
+      "agentId": "monitoring",
+      "role": "Sets up production monitoring, configures alerting thresholds, and tracks system health post-launch",
+      "accessLevel": "full",
+      "order": 5
+    },
+    {
+      "agentId": "documentation",
+      "role": "Produces release notes, deployment runbooks, and post-launch support documentation",
+      "accessLevel": "full",
+      "order": 6
+    }
+  ],
+  "modelPolicy": {
+    "defaultProvider": "ollama",
+    "defaultModel": "llama3.1:8b"
+  },
+  "isPreset": true,
+  "isActive": true,
+  "tags": ["launch", "release", "deployment"],
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}

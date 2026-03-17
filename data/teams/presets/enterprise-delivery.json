@@ -1,0 +1,76 @@
+{
+  "id": "enterprise-delivery",
+  "name": "Enterprise Delivery",
+  "description": "A large-scale delivery team built for enterprise projects, covering the complete software lifecycle from product ownership and project management through full-stack engineering, API integration, quality assurance, operations, and documentation.",
+  "agents": [
+    {
+      "agentId": "product-owner",
+      "role": "Manages the enterprise product backlog, defines strategic priorities, and ensures delivery aligns with business objectives",
+      "accessLevel": "read-only",
+      "order": 1
+    },
+    {
+      "agentId": "technical-pm",
+      "role": "Oversees project execution, manages cross-team dependencies, tracks milestones, and mitigates delivery risks",
+      "accessLevel": "read-only",
+      "order": 2
+    },
+    {
+      "agentId": "frontend-dev",
+      "role": "Develops the client-side application layer, building scalable UI components and managing frontend state",
+      "accessLevel": "full",
+      "order": 3
+    },
+    {
+      "agentId": "backend-dev",
+      "role": "Architects and implements server-side services, business logic, and data persistence layers",
+      "accessLevel": "full",
+      "order": 4
+    },
+    {
+      "agentId": "api-integration",
+      "role": "Designs and implements API contracts, manages third-party integrations, and ensures seamless service communication",
+      "accessLevel": "full",
+      "order": 5
+    },
+    {
+      "agentId": "qa-test",
+      "role": "Establishes test strategies, executes comprehensive test suites, and enforces quality gates across the pipeline",
+      "accessLevel": "full",
+      "order": 6
+    },
+    {
+      "agentId": "code-reviewer",
+      "role": "Conducts thorough code reviews enforcing enterprise coding standards, security practices, and architectural consistency",
+      "accessLevel": "full",
+      "order": 7
+    },
+    {
+      "agentId": "devops",
+      "role": "Manages enterprise CI/CD infrastructure, container orchestration, and environment automation at scale",
+      "accessLevel": "full",
+      "order": 8
+    },
+    {
+      "agentId": "monitoring",
+      "role": "Implements enterprise observability with distributed tracing, centralized logging, and SLA-driven alerting",
+      "accessLevel": "full",
+      "order": 9
+    },
+    {
+      "agentId": "documentation",
+      "role": "Maintains comprehensive technical documentation, API specifications, architecture diagrams, and compliance records",
+      "accessLevel": "full",
+      "order": 10
+    }
+  ],
+  "modelPolicy": {
+    "defaultProvider": "ollama",
+    "defaultModel": "llama3.1:8b"
+  },
+  "isPreset": true,
+  "isActive": true,
+  "tags": ["enterprise", "large-scale", "full-cycle"],
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}

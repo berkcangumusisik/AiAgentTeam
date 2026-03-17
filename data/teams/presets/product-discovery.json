@@ -1,0 +1,46 @@
+{
+  "id": "product-discovery",
+  "name": "Product Discovery",
+  "description": "A research and planning team that explores market opportunities, validates ideas, defines requirements, designs user experiences, and structures delivery into actionable sprints.",
+  "agents": [
+    {
+      "agentId": "product-manager",
+      "role": "Leads product discovery, defines the product vision, and aligns stakeholders on strategic direction",
+      "accessLevel": "read-only",
+      "order": 1
+    },
+    {
+      "agentId": "research",
+      "role": "Conducts market research, competitive analysis, and user interviews to inform product decisions",
+      "accessLevel": "read-only",
+      "order": 2
+    },
+    {
+      "agentId": "business-analyst",
+      "role": "Translates research findings into detailed requirements, user stories, and acceptance criteria",
+      "accessLevel": "read-only",
+      "order": 3
+    },
+    {
+      "agentId": "ui-ux-designer",
+      "role": "Creates prototypes and interaction designs to visualize and validate proposed user experiences",
+      "accessLevel": "read-only",
+      "order": 4
+    },
+    {
+      "agentId": "sprint-planner",
+      "role": "Organizes validated features into sprint backlogs with estimated effort and clear delivery milestones",
+      "accessLevel": "read-only",
+      "order": 5
+    }
+  ],
+  "modelPolicy": {
+    "defaultProvider": "ollama",
+    "defaultModel": "llama3.1:8b"
+  },
+  "isPreset": true,
+  "isActive": true,
+  "tags": ["discovery", "planning", "research"],
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}

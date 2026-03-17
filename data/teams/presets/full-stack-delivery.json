@@ -1,0 +1,70 @@
+{
+  "id": "full-stack-delivery",
+  "name": "Full Stack Delivery",
+  "description": "A comprehensive delivery team covering the full software development lifecycle from product ownership through frontend and backend engineering, quality assurance, code review, operations, and monitoring.",
+  "agents": [
+    {
+      "agentId": "product-owner",
+      "role": "Owns the product backlog, defines acceptance criteria, and makes prioritization decisions for each sprint",
+      "accessLevel": "read-only",
+      "order": 1
+    },
+    {
+      "agentId": "technical-pm",
+      "role": "Coordinates cross-functional work, manages timelines, and removes technical blockers across the delivery pipeline",
+      "accessLevel": "read-only",
+      "order": 2
+    },
+    {
+      "agentId": "frontend-dev",
+      "role": "Builds and maintains the client-side application, implementing UI components and frontend logic",
+      "accessLevel": "full",
+      "order": 3
+    },
+    {
+      "agentId": "backend-dev",
+      "role": "Develops server-side services, APIs, and data layer logic powering the application",
+      "accessLevel": "full",
+      "order": 4
+    },
+    {
+      "agentId": "qa-test",
+      "role": "Designs and executes test plans, performs regression testing, and validates feature completeness",
+      "accessLevel": "full",
+      "order": 5
+    },
+    {
+      "agentId": "code-reviewer",
+      "role": "Reviews pull requests for code quality, adherence to standards, and potential defects before merge",
+      "accessLevel": "full",
+      "order": 6
+    },
+    {
+      "agentId": "devops",
+      "role": "Manages CI/CD pipelines, infrastructure as code, and environment provisioning for all stages",
+      "accessLevel": "full",
+      "order": 7
+    },
+    {
+      "agentId": "monitoring",
+      "role": "Configures observability tooling, sets up alerts, and tracks system health and performance metrics",
+      "accessLevel": "full",
+      "order": 8
+    },
+    {
+      "agentId": "documentation",
+      "role": "Maintains technical documentation, architecture decision records, and runbooks for the delivered system",
+      "accessLevel": "full",
+      "order": 9
+    }
+  ],
+  "modelPolicy": {
+    "defaultProvider": "ollama",
+    "defaultModel": "llama3.1:8b"
+  },
+  "isPreset": true,
+  "isActive": true,
+  "tags": ["delivery", "full-stack", "enterprise"],
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}

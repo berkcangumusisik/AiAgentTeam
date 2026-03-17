@@ -1,0 +1,40 @@
+{
+  "id": "refactor-team",
+  "name": "Refactor Team",
+  "description": "A specialized team focused on improving code quality, reducing technical debt, restructuring architecture, and ensuring refactored code passes rigorous review and testing.",
+  "agents": [
+    {
+      "agentId": "refactor",
+      "role": "Analyzes codebase for technical debt, proposes refactoring strategies, and executes structural improvements",
+      "accessLevel": "full",
+      "order": 1
+    },
+    {
+      "agentId": "code-reviewer",
+      "role": "Reviews refactored code for correctness, maintainability, and consistency with architectural patterns",
+      "accessLevel": "full",
+      "order": 2
+    },
+    {
+      "agentId": "qa-test",
+      "role": "Runs regression and integration tests to ensure refactoring preserves existing behavior and functionality",
+      "accessLevel": "full",
+      "order": 3
+    },
+    {
+      "agentId": "documentation",
+      "role": "Updates technical documentation, code comments, and architecture diagrams to reflect refactored structures",
+      "accessLevel": "full",
+      "order": 4
+    }
+  ],
+  "modelPolicy": {
+    "defaultProvider": "ollama",
+    "defaultModel": "llama3.1:8b"
+  },
+  "isPreset": true,
+  "isActive": true,
+  "tags": ["refactor", "tech-debt", "quality"],
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}

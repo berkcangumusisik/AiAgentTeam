@@ -1,0 +1,290 @@
+[
+  {
+    "name": "openai",
+    "displayName": "OpenAI",
+    "baseUrl": "https://api.openai.com/v1",
+    "apiKey": "",
+    "isEnabled": false,
+    "isLocal": false,
+    "models": [
+      {
+        "id": "gpt-4o",
+        "name": "GPT-4o",
+        "contextWindow": 128000,
+        "maxOutputTokens": 16384
+      },
+      {
+        "id": "gpt-4o-mini",
+        "name": "GPT-4o Mini",
+        "contextWindow": 128000,
+        "maxOutputTokens": 16384
+      },
+      {
+        "id": "gpt-4-turbo",
+        "name": "GPT-4 Turbo",
+        "contextWindow": 128000,
+        "maxOutputTokens": 4096
+      },
+      {
+        "id": "o1",
+        "name": "o1",
+        "contextWindow": 200000,
+        "maxOutputTokens": 100000
+      },
+      {
+        "id": "o1-mini",
+        "name": "o1 Mini",
+        "contextWindow": 128000,
+        "maxOutputTokens": 65536
+      }
+    ],
+    "apiFormat": "openai",
+    "defaultModel": "gpt-4o",
+    "status": "untested"
+  },
+  {
+    "name": "anthropic",
+    "displayName": "Anthropic",
+    "baseUrl": "https://api.anthropic.com",
+    "apiKey": "",
+    "isEnabled": false,
+    "isLocal": false,
+    "models": [
+      {
+        "id": "claude-sonnet-4-5-20250514",
+        "name": "Claude Sonnet 4.5",
+        "contextWindow": 200000,
+        "maxOutputTokens": 8192
+      },
+      {
+        "id": "claude-haiku-3-5-20241022",
+        "name": "Claude Haiku 3.5",
+        "contextWindow": 200000,
+        "maxOutputTokens": 8192
+      }
+    ],
+    "apiFormat": "anthropic",
+    "defaultModel": "claude-sonnet-4-5-20250514",
+    "status": "untested"
+  },
+  {
+    "name": "ollama",
+    "displayName": "Ollama (Local)",
+    "baseUrl": "http://localhost:11434",
+    "isEnabled": true,
+    "isLocal": true,
+    "models": [
+      {
+        "id": "llama3.1:8b",
+        "name": "Llama 3.1 8B",
+        "contextWindow": 131072
+      },
+      {
+        "id": "llama3.1:70b",
+        "name": "Llama 3.1 70B",
+        "contextWindow": 131072
+      },
+      {
+        "id": "codellama:13b",
+        "name": "Code Llama 13B",
+        "contextWindow": 16384
+      },
+      {
+        "id": "deepseek-coder-v2:16b",
+        "name": "DeepSeek Coder V2 16B",
+        "contextWindow": 131072
+      },
+      {
+        "id": "qwen2.5-coder:7b",
+        "name": "Qwen 2.5 Coder 7B",
+        "contextWindow": 32768
+      }
+    ],
+    "apiFormat": "ollama",
+    "defaultModel": "llama3.1:8b",
+    "status": "connected",
+    "testedAt": "2026-03-17T08:29:02.119Z"
+  },
+  {
+    "name": "gemini",
+    "displayName": "Google Gemini",
+    "baseUrl": "https://generativelanguage.googleapis.com/v1beta",
+    "apiKey": "",
+    "isEnabled": false,
+    "isLocal": false,
+    "models": [
+      {
+        "id": "gemini-2.0-flash",
+        "name": "Gemini 2.0 Flash",
+        "contextWindow": 1048576,
+        "maxOutputTokens": 8192
+      },
+      {
+        "id": "gemini-1.5-pro",
+        "name": "Gemini 1.5 Pro",
+        "contextWindow": 2097152,
+        "maxOutputTokens": 8192
+      }
+    ],
+    "apiFormat": "gemini",
+    "defaultModel": "gemini-2.0-flash",
+    "status": "untested"
+  },
+  {
+    "name": "openrouter",
+    "displayName": "OpenRouter",
+    "baseUrl": "https://openrouter.ai/api/v1",
+    "apiKey": "",
+    "isEnabled": false,
+    "isLocal": false,
+    "models": [
+      {
+        "id": "openai/gpt-4o",
+        "name": "GPT-4o (via OpenRouter)",
+        "contextWindow": 128000
+      },
+      {
+        "id": "anthropic/claude-3.5-sonnet",
+        "name": "Claude 3.5 Sonnet (via OpenRouter)",
+        "contextWindow": 200000
+      },
+      {
+        "id": "meta-llama/llama-3.1-405b-instruct",
+        "name": "Llama 3.1 405B",
+        "contextWindow": 131072
+      }
+    ],
+    "apiFormat": "openai",
+    "defaultModel": "openai/gpt-4o",
+    "status": "untested"
+  },
+  {
+    "name": "groq",
+    "displayName": "Groq",
+    "baseUrl": "https://api.groq.com/openai/v1",
+    "apiKey": "",
+    "isEnabled": false,
+    "isLocal": false,
+    "models": [
+      {
+        "id": "llama-3.1-70b-versatile",
+        "name": "Llama 3.1 70B",
+        "contextWindow": 131072
+      },
+      {
+        "id": "llama-3.1-8b-instant",
+        "name": "Llama 3.1 8B",
+        "contextWindow": 131072
+      },
+      {
+        "id": "mixtral-8x7b-32768",
+        "name": "Mixtral 8x7B",
+        "contextWindow": 32768
+      }
+    ],
+    "apiFormat": "openai",
+    "defaultModel": "llama-3.1-70b-versatile",
+    "status": "untested"
+  },
+  {
+    "name": "together",
+    "displayName": "Together AI",
+    "baseUrl": "https://api.together.xyz/v1",
+    "apiKey": "",
+    "isEnabled": false,
+    "isLocal": false,
+    "models": [
+      {
+        "id": "meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo",
+        "name": "Llama 3.1 70B Turbo",
+        "contextWindow": 131072
+      },
+      {
+        "id": "meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo",
+        "name": "Llama 3.1 8B Turbo",
+        "contextWindow": 131072
+      },
+      {
+        "id": "Qwen/Qwen2.5-Coder-32B-Instruct",
+        "name": "Qwen 2.5 Coder 32B",
+        "contextWindow": 32768
+      }
+    ],
+    "apiFormat": "openai",
+    "defaultModel": "meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo",
+    "status": "untested"
+  },
+  {
+    "name": "deepseek",
+    "displayName": "DeepSeek",
+    "baseUrl": "https://api.deepseek.com/v1",
+    "apiKey": "",
+    "isEnabled": false,
+    "isLocal": false,
+    "models": [
+      {
+        "id": "deepseek-chat",
+        "name": "DeepSeek V3",
+        "contextWindow": 65536,
+        "maxOutputTokens": 8192
+      },
+      {
+        "id": "deepseek-coder",
+        "name": "DeepSeek Coder",
+        "contextWindow": 65536,
+        "maxOutputTokens": 8192
+      }
+    ],
+    "apiFormat": "openai",
+    "defaultModel": "deepseek-chat",
+    "status": "untested"
+  },
+  {
+    "name": "mistral",
+    "displayName": "Mistral AI",
+    "baseUrl": "https://api.mistral.ai/v1",
+    "apiKey": "",
+    "isEnabled": false,
+    "isLocal": false,
+    "models": [
+      {
+        "id": "mistral-large-latest",
+        "name": "Mistral Large",
+        "contextWindow": 128000
+      },
+      {
+        "id": "mistral-small-latest",
+        "name": "Mistral Small",
+        "contextWindow": 128000
+      },
+      {
+        "id": "codestral-latest",
+        "name": "Codestral",
+        "contextWindow": 32768
+      }
+    ],
+    "apiFormat": "openai",
+    "defaultModel": "mistral-large-latest",
+    "status": "untested"
+  },
+  {
+    "name": "vllm",
+    "displayName": "vLLM (Local)",
+    "baseUrl": "http://localhost:8000/v1",
+    "isEnabled": false,
+    "isLocal": true,
+    "models": [],
+    "apiFormat": "openai",
+    "status": "untested"
+  },
+  {
+    "name": "lmstudio",
+    "displayName": "LM Studio (Local)",
+    "baseUrl": "http://localhost:1234/v1",
+    "isEnabled": false,
+    "isLocal": true,
+    "models": [],
+    "apiFormat": "openai",
+    "status": "untested"
+  }
+]

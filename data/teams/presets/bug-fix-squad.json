@@ -1,0 +1,46 @@
+{
+  "id": "bug-fix-squad",
+  "name": "Bug Fix Squad",
+  "description": "A focused team dedicated to triaging, reproducing, fixing, and verifying software defects across the frontend and backend with thorough code review.",
+  "agents": [
+    {
+      "agentId": "bug-hunter",
+      "role": "Triages incoming bug reports, reproduces issues, identifies root causes, and documents reproduction steps",
+      "accessLevel": "full",
+      "order": 1
+    },
+    {
+      "agentId": "frontend-dev",
+      "role": "Diagnoses and resolves client-side defects including UI glitches, state management issues, and rendering bugs",
+      "accessLevel": "full",
+      "order": 2
+    },
+    {
+      "agentId": "backend-dev",
+      "role": "Investigates and patches server-side bugs including API errors, data inconsistencies, and performance regressions",
+      "accessLevel": "full",
+      "order": 3
+    },
+    {
+      "agentId": "qa-test",
+      "role": "Verifies bug fixes, writes regression tests, and confirms that patches do not introduce new defects",
+      "accessLevel": "full",
+      "order": 4
+    },
+    {
+      "agentId": "code-reviewer",
+      "role": "Reviews fix implementations for correctness, potential side effects, and adherence to coding standards",
+      "accessLevel": "full",
+      "order": 5
+    }
+  ],
+  "modelPolicy": {
+    "defaultProvider": "ollama",
+    "defaultModel": "llama3.1:8b"
+  },
+  "isPreset": true,
+  "isActive": true,
+  "tags": ["bugfix", "maintenance"],
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}

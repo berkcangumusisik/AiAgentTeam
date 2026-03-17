@@ -1,0 +1,46 @@
+{
+  "id": "design-to-dev",
+  "name": "Design to Dev",
+  "description": "A design-driven team that takes UI/UX concepts from visual design through design system implementation, responsive frontend development, and code review to ensure pixel-perfect delivery.",
+  "agents": [
+    {
+      "agentId": "ui-ux-designer",
+      "role": "Creates high-fidelity UI designs, interaction specifications, and visual design language for the product",
+      "accessLevel": "read-only",
+      "order": 1
+    },
+    {
+      "agentId": "design-system",
+      "role": "Translates visual designs into a reusable component library with consistent tokens, patterns, and guidelines",
+      "accessLevel": "read-only",
+      "order": 2
+    },
+    {
+      "agentId": "responsive-experience",
+      "role": "Ensures designs adapt seamlessly across breakpoints, devices, and screen orientations",
+      "accessLevel": "read-only",
+      "order": 3
+    },
+    {
+      "agentId": "frontend-dev",
+      "role": "Implements the UI components and pages in code, translating designs into functional interactive interfaces",
+      "accessLevel": "full",
+      "order": 4
+    },
+    {
+      "agentId": "code-reviewer",
+      "role": "Reviews frontend implementation for code quality, accessibility compliance, and design fidelity",
+      "accessLevel": "full",
+      "order": 5
+    }
+  ],
+  "modelPolicy": {
+    "defaultProvider": "ollama",
+    "defaultModel": "llama3.1:8b"
+  },
+  "isPreset": true,
+  "isActive": true,
+  "tags": ["design", "frontend", "ui"],
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}
